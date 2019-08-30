@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    tools:context=".Splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Splash">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tenue Remote Control"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:gravity="center|bottom"
+            android:id="@+id/imageView"/>
+
+        <TextView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|top"
+            android:text="(PowerPoint Control Model)"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="eg. 192.168.43.84"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg"
+            android:padding="15dp"
+            android:id="@+id/ipAddress"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:text="Get IP Address from Remote Control PowerPoint AddIn and input above"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/connect"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Connect Remote"/>
+    </LinearLayout>
+</ScrollView>
